@@ -52,5 +52,6 @@ public class MethodReferenceFeatures {
 	static void  display(int val)
 	{
 		System.out.println("the value is :  "+val);
+		
 	}
 }
