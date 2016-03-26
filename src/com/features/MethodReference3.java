@@ -20,8 +20,8 @@ class User {
 }
 
 public class MethodReference3 {
-	static Integer count(User[] arr,CountLessAge countFunc , User given)
-	{
+	 Integer count(User[] arr,CountLessAge countFunc , User given)
+	{ // Method reference can be done for non static methods also
 		Integer co = 0;
 		for(Integer i = 0 ; i < arr.length ; i++)
 		{
@@ -34,7 +34,7 @@ public class MethodReference3 {
 	}
 	public static void main(String... cmd) {
 		User[] arr = { new User(30),new User(27),new User(28),new User(31)};
-		Integer val = MethodReference3.count(arr,User::isAgeLesser, new User(30));
+		Integer val = new MethodReference3().count(arr,User::isAgeLesser, new User(30));
 		out.println(val);
 		
 		LinkedList<Integer> list = new LinkedList<Integer>();
